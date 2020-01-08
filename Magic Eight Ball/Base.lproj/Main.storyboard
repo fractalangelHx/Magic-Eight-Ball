@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MHH-I6-ZW0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_Eight_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ESQ-0j-BPN">
+                                <rect key="frame" x="120.5" y="439" width="173" height="76"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="32"/>
+                                <state key="normal">
+                                    <string key="title">shake or tap 
+ for answer</string>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osj-z7-61R"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eight Ball" translatesAutoresizingMaskIntoConstraints="NO" id="H3m-at-A0I">
+                                <rect key="frame" x="107" y="231" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gHL-bU-y5U"/>
+                                    <constraint firstAttribute="width" constant="200" id="mVL-wo-CCt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASK ME A QUESTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3az-jo-hMr">
+                                <rect key="frame" x="57" y="123" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AyY-79-j3D"/>
+                                    <constraint firstAttribute="width" constant="300" id="O2s-Xu-n4y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic Icosahedron" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHF-QR-Rrc">
+                                <rect key="frame" x="57" y="771" width="300" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="0bf-Jy-Shb"/>
+                                    <constraint firstAttribute="width" constant="300" id="SEM-pM-5G9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zHF-QR-Rrc" secondAttribute="bottom" constant="24" id="94x-ZO-cCR"/>
+                            <constraint firstItem="3az-jo-hMr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EDH-um-SWJ"/>
+                            <constraint firstItem="H3m-at-A0I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sd0-2c-Hh8"/>
+                            <constraint firstItem="ESQ-0j-BPN" firstAttribute="top" secondItem="H3m-at-A0I" secondAttribute="bottom" constant="8" id="Wc2-hg-8yr"/>
+                            <constraint firstItem="H3m-at-A0I" firstAttribute="top" secondItem="3az-jo-hMr" secondAttribute="bottom" constant="8" id="XgY-Sy-TFu"/>
+                            <constraint firstItem="zHF-QR-Rrc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpD-Zh-0aI"/>
+                            <constraint firstItem="ESQ-0j-BPN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vTA-ay-OEq"/>
+                            <constraint firstItem="3az-jo-hMr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="xeQ-Ns-3sf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8hj-Oc-k90"/>
+                    <connections>
+                        <segue destination="ggm-Kx-0CP" kind="show" identifier="FirstToSecondSegue" id="GeY-89-g7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="87.723214285714278"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="HPI-5r-D7g">
+            <objects>
+                <viewController id="ggm-Kx-0CP" customClass="SecondViewController" customModule="Magic_Eight_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JtF-5U-WNa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOa-zl-b4Y">
+                                <rect key="frame" x="57" y="260.5" width="300" height="375"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="RJn-Cr-uY0"/>
+                                    <constraint firstAttribute="height" constant="375" id="dX0-qp-RtO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="HOa-zl-b4Y" firstAttribute="centerY" secondItem="JtF-5U-WNa" secondAttribute="centerY" id="6Ii-qc-D2v"/>
+                            <constraint firstItem="HOa-zl-b4Y" firstAttribute="centerX" secondItem="JtF-5U-WNa" secondAttribute="centerX" id="T8e-TM-9Ig"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9sF-Ey-elA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JUv-ZF-91p"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="HOa-zl-b4Y" id="qP4-W8-pC1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7s-dg-XGp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760.8695652173915" y="91.741071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RPU-fY-KGX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MHH-I6-ZW0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ysL-zi-4uI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EAE-za-Fhv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8Y-Ru-mM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Eight Ball" width="259" height="194"/>
+    </resources>
+</document>
